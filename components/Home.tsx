@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="w-full ">      
       <section className="relative flex items-center min-h-screen">  
-        <div className="container mx-auto ">
+        <div className="container mx-auto p-6 ">
           <div className="flex flex-col md:flex-row items-center">        
             <div className="md:w-1/2">
               <div className='sapce-y-4'>
@@ -23,11 +23,11 @@ const Home = () => {
             </div>  
                     
            <div className="hidden md:block md:w-1/2">
-            <div className="flex justify-center items-center border-2 border-blue-400 p-4 mx-auto w-fit">
+            <div className="flex justify-center items-center border-2 border-blue-400 rounded-2xl p-4 mx-auto w-fit">
               <img
                 src="mypic.png"
                 alt="bksarswal"
-                className="rounded-lg w-[400px] h-[400px] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                className="rounded-lg w-[400px] h-[500px] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
               />
             </div>
            </div>

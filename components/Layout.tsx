@@ -7,10 +7,10 @@ const Layout:FC<ChildrenINterface> = ({children}) => {
    return (
     <div>
          <div className="bg-[#0f0715]">
-     <header className="absolute  top-0 left-0 w-full z-100 bg-[#0f0715] sticky ">
+     <header className=" top-0 left-0 w-full z-100 bg-[#0f0715] sticky ">
       <div className="container mx-auto px-4">
         <div className="flex  items-center justify-between py-2">
-          <div className="flex items-center py-2">
+          <div className="flex items-center py-2 px-1">
             <a href="https://gerold.themejunction.net/" className='text-4xl font-bold text-white'>
              Bksarswal
             </a>
@@ -23,7 +23,7 @@ const Layout:FC<ChildrenINterface> = ({children}) => {
                 <Link href="/" className="hover:border-b-blue-500 ">Home</Link>
               </li>
               <li>
-                <Link href="#works" className="hover:border-b-blue-500">Works</Link>
+                <Link href="/works" className="hover:border-b-blue-500">Works</Link>
               </li>
               <li>
                 <Link href="#resume" className="hover:border-b-blue-500">Resume</Link>
@@ -32,9 +32,7 @@ const Layout:FC<ChildrenINterface> = ({children}) => {
                 <Link href="#skills" className="hover:border-b-blue-500">Skills</Link>
               </li>
              
-              <li>
-                <Link href="#contact" className="hover:border-b-blue-500">Contact</Link>
-              </li>
+             
             </ul>
           </nav>
 
@@ -44,7 +42,7 @@ const Layout:FC<ChildrenINterface> = ({children}) => {
               href="#"
               className="bg-indigo-600 text-white font-semibold px-8 py-4 rounded-full bg-[#3a1e70] hover:bg-indigo-700 transition"
             >
-              Hire me!
+             Contact
             </a>
           </div>
 
