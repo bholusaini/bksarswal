@@ -8,32 +8,52 @@ const Home = () => {
         <div className="container mx-auto p-6 ">
           <div className="flex flex-col md:flex-row items-center">        
             <div className="md:w-1/2">
-              <div className='sapce-y-4'>
-                <span className='text-4xl text-white font-bold'> I am Bholu Saini</span>
-                <h1  className='text-8xl text-[#8e5bf8] font-bold' >Full Stack Web Developer</h1>
+              <div className='space-y-6'>
+  <span className='text-2xl sm:text-3xl text-white font-bold block pb-4'>
+    I am Bholu Saini
+  </span>
 
-                <p className='text-lg text-gray-200 font-medium'>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eos assumenda sunt qui, incidunt odio asperiores inventore quae provident! Obcaecati, repellendus? Et, iusto praesentium! Explicabo, minus? Fugit aut inventore ea.
-                </p>
+  <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#8e5bf8] font-extrabold leading-tight'>
+    Full Stack<br />Web<br />Developer
+  </h1>
 
-                <div className='py-8 text-start'>
-                  <button className='border border-blue-400 text-blue-400 hover:text-white text-lg font-bold hover:bg-blue-500 px-4 py-3 rounded-full'>Download CV *</button>
-                </div>
-              </div>
+  <p className='text-base sm:text-lg text-gray-300 font-medium max-w-2xl'>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos assumenda sunt qui, incidunt odio asperiores inventore quae provident!
+  </p>
+
+
+<div className="pt-6 text-start">
+  <a
+    href="/bholu-resume.pdf"
+    download
+    className="inline-flex items-center gap-2 border border-blue-400 text-blue-400 hover:text-white text-base sm:text-lg font-bold hover:bg-blue-500 px-6 py-3 rounded-full transition-all duration-300"
+  >
+    Download CV
+  </a>
+</div>
+
+</div>
+
             </div>  
                     
-           <div className="hidden md:block md:w-1/2">
-            <div className="flex justify-center items-center border-2 border-blue-400 rounded-2xl p-4 mx-auto w-fit">
-              <img
-                src="mypic.png"
-                alt="bksarswal"
-                className="rounded-lg w-[400px] h-[500px] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
-              />
-            </div>
-           </div>
+   <div className="hidden md:block md:w-1/2">
+  {/* Outer wrapper handles rotation + hover reset */}
+  <div className="transform rotate-3 hover:rotate-0 transition-all duration-500 ease-in-out">
+    <div className="flex justify-center items-center border-3 border-indigo-400 hover:border-blue-600 rounded-xl mx-auto w-fit ">
+      <img
+        src="/mypic.png"
+        alt="bksarswal"
+        className="rounded-lg w-[400px] sm:w-[400px] h-[400px] sm:h-[500px] object-cover "
+      />
+    </div>
+  </div>
+</div>
+
+ 
           </div>
         </div>
       </section>
+    
     </div>
     
   )
