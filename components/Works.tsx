@@ -2,7 +2,8 @@ import React from 'react'
 
 const Works = () => {
   return (
-    <div>Project</div>
+    <div className='text-white'>Project
+    </div>
   )
 }
 

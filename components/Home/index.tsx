@@ -1,16 +1,19 @@
 import Link from 'next/link'
 import React from 'react'
+import Works from '../Works'
+import Resume from '../Resume'
+import Skills from '../Skills'
+import Contact from '../Contact'
 
 const Home = () => {
   return (
     <div className="w-full">
       <section className="relative flex items-center min-h-screen bg-black">
         <div className="container mx-auto p-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            
-            {/* 📝 Mobile Heading + Image + Desc + Button | Full Text on Desktop */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">            
+          
             <div className="w-full md:w-1/2  md:text-left order-1 md:order-none">
-              {/* Heading Only on Mobile */}
+              {/* Heading fo Mobile */}
               <div className="md:hidden flex  flex-col justify-start gap-4 mb-6">
                 <span className="text-2xl sm:text-2xl text-white font-bold block">
                   I am Bholu Saini
@@ -20,7 +23,7 @@ const Home = () => {
                 </h1>
               </div>
 
-              {/* 👨‍💻 Image - Only on Mobile */}
+              {/* img for Mobile */}
               <div className=" md:hidden flex justify-center mb-6">
                 <div className="transform rotate-3 hover:rotate-0 transition-all duration-500 ease-in-out">
                   <div className="flex justify-center items-center border-4 border-indigo-400 hover:border-blue-600 rounded-xl w-[280px] md:w-[300px] h-[350px] md:h-[30px]">
@@ -33,9 +36,9 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Description + Button (always shown) */}
+              {/* Description + download btn show All Same  */}
               <div className="space-y-6">
-                {/* Heading (Desktop only) */}
+                {/* Heading for Desktop */}
                 <div className="hidden md:block">
                   <span className="text-2xl sm:text-3xl text-white font-bold block pb-2">
                     I am Bholu Saini
@@ -79,6 +82,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Works/>
+      <Resume/>
+      <Skills/>
+      <Contact/>
     </div>
   )
 }

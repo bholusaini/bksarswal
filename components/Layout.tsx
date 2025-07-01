@@ -46,8 +46,8 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
               <ul className="flex text-lg font-semibold text-white gap-8">
                 <li><Link href="/" className="hover:border-b-2 hover:border-blue-500">Home</Link></li>
                 <li><Link href="/works" className="hover:border-b-2 hover:border-blue-500">Works</Link></li>
-                <li><Link href="#resume" className="hover:border-b-2 hover:border-blue-500">Resume</Link></li>
-                <li><Link href="#skills" className="hover:border-b-2 hover:border-blue-500">Skills</Link></li>
+                <li><Link href="/resume" className="hover:border-b-2 hover:border-blue-500">Resume</Link></li>
+                <li><Link href="/skills" className="hover:border-b-2 hover:border-blue-500">Skills</Link></li>
               </ul>
             </nav>
 
