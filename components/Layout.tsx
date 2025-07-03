@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { FC, ReactNode, useEffect, useState } from 'react'
 import 'animate.css'
+import { MenuOutlined } from '@ant-design/icons'
 
 interface ChildrenInterface {
   children: ReactNode
@@ -23,13 +24,13 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
     <div className="min-h-screen w-full bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b]">
       {/* Header */}
       <header
-        className={`top-0 left-0 w-full z-[100] sticky transition-all duration-300 ${
+        className={`top-0  left-0 w-full z-[100] sticky transition-all duration-300 ${
           isScrolled
             ? 'bg-black shadow-lg animate__animated animate__fadeInDown'
             : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 ">
           <div className="flex items-center justify-between py-4">
             <div className="w-16 h-16  flex justify-center items-center rounded-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa]">
               <a
@@ -52,7 +53,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             </nav>
 
             {/* Contact Button */}
-            <div className="ml-4 hidden lg:block">
+            <div className="ml-4 lg:block">
               <a
                 href="/contact"
                 className="bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] text-white font-semibold px-8 py-4 rounded-full hover:bg-indigo-700 transition"
@@ -65,11 +66,9 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             <div className="lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="flex flex-col justify-center items-center w-8 h-8 space-y-1"
+                className="flex flex-col justify-center items-center  w-16! h-16! space-y-1"
               >
-                <span className="block w-6 h-0.5 bg-white"></span>
-                <span className="block w-6 h-0.5 bg-white"></span>
-                <span className="block w-6 h-0.5 bg-white"></span>
+              <MenuOutlined className=' text-4xl text-white! font-extrabold!' />
               </button>
             </div>
           </div>

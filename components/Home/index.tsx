@@ -4,21 +4,22 @@ import Works from '../Works'
 import Resume from '../Resume'
 import Skills from '../Skills'
 import Contact from '../Contact'
+import Footer from './Footer'
 
 const Home = () => {
   return (
-    <div className="w-full">
-      <section className="relative flex items-center min-h-screen bg-black">
-        <div className="container mx-auto p-6">
+    <div className="w-full bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b]">
+      <section className="relative flex items-center min-h-screen">
+        <div className="container mx-auto px-8 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">            
           
-            <div className="w-full md:w-1/2  md:text-left order-1 md:order-none">
+            <div className="w-full md:w-6/12  md:text-left order-1 md:order-none">
               {/* Heading fo Mobile */}
               <div className="md:hidden flex  flex-col justify-start gap-4 mb-6">
                 <span className="text-2xl sm:text-2xl text-white font-bold block">
                   I am Bholu Saini
                 </span>
-               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-[#9564f8] to-[#8e5bf8] bg-clip-text text-transparent">
+               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-[#9564f8] to-[#8e5bf8] bg-clip-text text-transparent">
                   Full Stack <br/> Web Developer
                 </h1>
               </div>
@@ -26,11 +27,11 @@ const Home = () => {
               {/* img for Mobile */}
               <div className=" md:hidden flex justify-center mb-6">
                 <div className="transform rotate-3 hover:rotate-0 transition-all duration-500 ease-in-out">
-                  <div className="flex justify-center items-center border-4 border-indigo-400 hover:border-blue-600 rounded-xl w-[280px] md:w-[300px] h-[350px] md:h-[30px]">
+                  <div className="flex  w-full h-full  justify-center items-center border-4 border-indigo-400 hover:border-blue-600 rounded-xl">
                     <img
                       src="/mypic.png"
                       alt="bksarswal"
-                      className="rounded-lg w-full h-full object-cover"
+                      className="rounded-lg w-fit h-[350px] object-cover"
                     />
                   </div>
                 </div>
@@ -65,14 +66,14 @@ const Home = () => {
             </div>
 
             {/* 🖼️ Desktop Image */}
-            <div className="hidden md:block md:w-1/2 order-2">
-              <div className="flex justify-center mt-8 md:mt-0">
+            <div className="hidden md:block md:w-6/12 order-2">
+              <div className="flex justify-center md:mt-0">
                 <div className="transform rotate-3 hover:rotate-0 transition-all duration-500 ease-in-out">
-                  <div className="flex justify-center items-center border-4 border-indigo-400 hover:border-blue-600 rounded-xl w-[300px] h-[400px]">
+                  <div className=" w-full h-full flex justify-center items-center border-4 border-indigo-400 hover:border-blue-600 rounded-xl ">
                     <img
                       src="/mypic.png"
                       alt="bksarswal"
-                      className="rounded-lg w-full h-full object-cover"
+                      className="rounded-lg  h-[390px] object-cover"
                     />
                   </div>
                 </div>
@@ -86,6 +87,7 @@ const Home = () => {
       <Resume/>
       <Skills/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }
