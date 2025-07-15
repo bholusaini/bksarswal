@@ -1,8 +1,7 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
-import Image from "next/image";
-
 const Footer = () => {
   return (
     <footer className="bg-[#140c1c] text-white py-12">
@@ -51,14 +50,14 @@ const Footer = () => {
           {/* Copyright */}
           <p className="text-lg font-semibold text-gray-400">
             © 2025 All Rights Reserved by{" "}
-            <a
+            <Link
               href="https://themejunction.net/"
               className="text-blue-500 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
              bkSarswal0799
-            </a>
+            </Link>
           </p>
         </div>
       </div>

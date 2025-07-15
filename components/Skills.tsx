@@ -2,16 +2,16 @@
 "use client";
 
 import React from "react";
-import { Typography, Progress } from "antd";
+import { Typography,} from "antd";
 
 
 const { Title, Paragraph } = Typography;
 
-interface SkillItem {
-  name: string;
-  image: string;
-  percent: number;
-}
+// interface SkillItem {
+//   name: string;
+//   image: string;
+//   percent: number;
+// }
 
 const skills = [
   // Frontend

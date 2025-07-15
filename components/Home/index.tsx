@@ -1,10 +1,11 @@
-import Link from 'next/link'
+
 import React from 'react'
 import Works from '../Works'
 import Resume from '../Resume'
 import Skills from '../Skills'
 import Contact from '../Contact'
 import Footer from './Footer'
+import Link from 'next/link'
 
 const Home = () => {
   return (
@@ -54,13 +55,13 @@ const Home = () => {
                 </p>
 
                 <div className="pt-2">
-                  <a
+                  <Link
                     href="/bholusaini.pdf"
                     download
                     className="inline-flex items-center gap-2 border border-blue-400 text-blue-400 hover:text-white text-base sm:text-lg font-bold hover:bg-blue-500 px-6 py-3 rounded-full transition-all duration-300"
                   >
                     Download CV
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -12,11 +12,11 @@ export const POST = async (req:NextRequest )=>{
         const body  = await req.json()
        
         const message = await ContactModel.create(body)
-        console.log(message);
+        
 
         return res.json(message)
     }
-    catch(err:any)
+    catch(err)
     {
        console.error("API ERROR:", err); 
     }

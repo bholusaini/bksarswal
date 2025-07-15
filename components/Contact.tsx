@@ -8,7 +8,7 @@ import {
   MailOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
-import { Option } from "antd/es/mentions";
+
 import axios from "axios";
 
 const { Title, Paragraph } = Typography;
@@ -18,15 +18,14 @@ const Contact = () => {
   const createContact = async (values:any)=>{   
 
     try{
-      const {data} = await axios.post("/api/contact",values)
-          console.log(data);
+       await axios.post("/api/contact",values)
+     
       return message.success("message send success fully")
 
     }
     catch(err)
     {
-     
-
+     if(err instanceof Error)
       message.error("An error occured message not sent")
     }
   }
