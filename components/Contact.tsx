@@ -114,9 +114,9 @@ const Contact = () => {
             <MailOutlined className="text-4xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-full p-2 "/>
             <div>
               <p className="font-semibold">Email</p>
-              <a href="mailto:gerolddesign@mail.com" className="text-blue-400 hover:underline">
+              <Link href="mailto:gerolddesign@mail.com" className="text-blue-400 hover:underline">
                 bk@mail.com
-              </a>
+              </Link>
             </div>
           </div>
 
