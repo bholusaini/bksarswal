@@ -1,17 +1,37 @@
 "use client";
 
 import React from "react";
-import { Input, Select, Button, Form, Typography } from "antd";
+import { Input, Select, Button, Form, Typography, message } from "antd";
+import '@ant-design/v5-patch-for-react-19';
 import {
   PhoneOutlined,
   MailOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
 import { Option } from "antd/es/mentions";
+import axios from "axios";
 
 const { Title, Paragraph } = Typography;
 
 const Contact = () => {
+
+  const createContact = async (values:any)=>{   
+
+    try{
+      const {data} = await axios.post("/api/contact",values)
+          console.log(data);
+      return message.success("message send success fully")
+
+    }
+    catch(err)
+    {
+     
+
+      message.error("An error occured message not sent")
+    }
+  }
+
+
   return (
     <div className="px-4 py-16 bg-gradient-to-br from-[#0b0510] via-[#171225] to-[#2a2a4b]">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -28,24 +48,24 @@ const Contact = () => {
           <Form
             layout="vertical"
             className="text-white"
-            onFinish={(values) => console.log(values)}
+            onFinish={createContact}
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Form.Item name="fname" label={<span className="text-white">First Name</span>}>
+              <Form.Item name="firstName" label={<span className="text-white">First Name</span>}>
                 <Input placeholder="First name" className="bg-black! !text-white placeholder-gray-400! py-2! " />
               </Form.Item>
-              <Form.Item name="lname" label={<span className="text-white">Last Name</span>}>
+              <Form.Item name="lastName" label={<span className="text-white">Last Name</span>}>
                 <Input placeholder="Last name" className="bg-black! !text-white placeholder-gray-400! py-2!" />
               </Form.Item>
               <Form.Item name="email" label={<span className="text-white">Email</span>}>
                 <Input type="email" placeholder="Email address" className="bg-black! !text-white placeholder-gray-400! py-2!" />
               </Form.Item>
-              <Form.Item name="phone" label={<span className="text-white">Phone</span>}>
+              <Form.Item name="mobile" label={<span className="text-white">Phone</span>}>
                 <Input placeholder="Phone number" className="bg-black! !text-white placeholder-gray-400! py-2!" />
               </Form.Item>
             </div>
             <Form.Item
-              name="service"
+              name="serviceName"
               label={<span className="text-white">Select Service</span>}
             >
               <Select
@@ -53,10 +73,10 @@ const Contact = () => {
                 className="bg-black text-white"
               
               >
-                <Option value="branding" className="text-white">Branding Design</Option>
-                <Option value="web" className="text-white">Web Design</Option>
-                <Option value="uiux" className="text-white">UI/UX Design</Option>
-                <Option value="app" className="text-white">App Design</Option>
+                <Select.Option value="branding" className="text-white">Branding Design</Select.Option>
+                <Select.Option value="web" className="text-white">Web Design</Select.Option>
+                <Select.Option value="uiux" className="text-white">UI/UX Design</Select.Option>
+                <Select.Option value="app" className="text-white">App Design</Select.Option>
               </Select>
             </Form.Item>
                 <Form.Item name="message" label={<span className="text-white">Message</span>}>

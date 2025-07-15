@@ -67,10 +67,10 @@ const Skills = () => {
         </Paragraph>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-2">
-          {skills.map((skill) => (
-            <>
+          {skills.map((skill,index) => (
+            
             <div
-              key={skill.name}
+              key={index}
               className="flex flex-col text-white items-center justify-center "
             >
               <div className="flex flex-col items-center justify-center px-6 py-4 bg-white/5 hover:bg-[#673bbfd8] rounded-xl border border-white/10 hover:shadow-xl transition-all hover:scale-105">
@@ -87,7 +87,7 @@ const Skills = () => {
              <p className="mt-3 font-bold text-2xl  text-blue-600">{skill.name}</p>
             </div>
             
-            </>
+          
           ))}
         </div>
       </div>

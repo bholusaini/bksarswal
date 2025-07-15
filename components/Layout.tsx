@@ -106,7 +106,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
         >
           <img
             className="w-full h-full rounded-full"
-            src="/download (1).jpg"
+            src="/images/download (1).jpg"
             alt="WhatsApp"
           />
         </Link>

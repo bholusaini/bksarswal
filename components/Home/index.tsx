@@ -55,7 +55,7 @@ const Home = () => {
 
                 <div className="pt-2">
                   <a
-                    href="/bholu-resume.pdf"
+                    href="/bholusaini.pdf"
                     download
                     className="inline-flex items-center gap-2 border border-blue-400 text-blue-400 hover:text-white text-base sm:text-lg font-bold hover:bg-blue-500 px-6 py-3 rounded-full transition-all duration-300"
                   >
