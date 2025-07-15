@@ -10,12 +10,21 @@ import {
 } from "@ant-design/icons";
 
 import axios from "axios";
+import Link from "next/link";
 
 const { Title, Paragraph } = Typography;
+interface ContactInterface {
+  firstName:string
+  lastName:string
+  email:string
+  mobile:string
+  serviceName:string
+  message:string
+}
 
 const Contact = () => {
 
-  const createContact = async (values:any)=>{   
+  const createContact = async (values:ContactInterface)=>{   
 
     try{
        await axios.post("/api/contact",values)
@@ -95,9 +104,9 @@ const Contact = () => {
             <PhoneOutlined className="text-4xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-full p-2 " />
             <div>
               <p className="font-semibold">Phone</p>
-              <a href="tel:+011236548096" className="text-blue-400 hover:underline">
-                +91 99999999999
-              </a>
+              <Link href="tel:+011236548096" className="text-blue-400 hover:underline">
+                +91 7073736054
+              </Link>
             </div>
           </div>
 
