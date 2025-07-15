@@ -13,14 +13,15 @@ import axios from "axios";
 import Link from "next/link";
 
 const { Title, Paragraph } = Typography;
-interface ContactInterface {
-  firstName:string
-  lastName:string
-  email:string
-  mobile:string
-  serviceName:string
-  message:string
+export interface ContactInterface {
+  firstName: string;
+  lastName: string;
+  email: string;
+  mobile: string;
+  serviceName: 'branding' | 'web' | 'uiux' | 'app';
+  message: string;
 }
+
 
 const Contact = () => {
 
