@@ -9,41 +9,41 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center gap-6">
           {/* Logo */}
             <div className="w-16 h-16  flex justify-center items-center rounded-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa]">
-              <a
+              <Link
                 href="/"
                 className="text-white text-xl font-bold tracking-widest font-mono "
               >
                  BK
             
-              </a>
+              </Link>
             </div>
 
           {/* Menu */}
           <ul className="flex flex-wrap justify-center gap-5 text-sm md:text-base font-medium">
             <li>
-              <a href="/" className="hover:text-blue-500 transition">
+              <Link href="/" className="hover:text-blue-500 transition">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/works" className="hover:text-blue-500 transition">
+              <Link href="/works" className="hover:text-blue-500 transition">
                 Works
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/skills" className="hover:text-blue-500 transition">
+              <Link href="/skills" className="hover:text-blue-500 transition">
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/resume" className="hover:text-blue-500 transition">
+              <Link href="/resume" className="hover:text-blue-500 transition">
                 Resume
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-blue-500 transition">
+              <Link href="/contact" className="hover:text-blue-500 transition">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
