@@ -3,6 +3,7 @@
 
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { Card, Typography } from "antd";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const { Title } = Typography;
@@ -106,12 +107,12 @@ const Works = () => {
                   <h3 className="text-2xl font-bold text-white">{item.title}</h3>
                   <p className="text-sm text-gray-300">{item.description}</p>
                 </div>
-                <a
+                <Link
                   href={item.link}                
                   className="  text-white  text-3xl font-bold "
                 >
                    <ArrowRightOutlined/>
-                </a>
+                </Link>
               </div>
               </Card>
               

@@ -33,13 +33,13 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
         <div className="container mx-auto px-8 ">
           <div className="flex items-center justify-between py-4">
             <div className="w-16 h-16  flex justify-center items-center rounded-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa]">
-              <a
+              <Link
                 href="/"
                 className="text-white text-xl font-bold tracking-widest font-mono "
               >
                  BK
             
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Nav */}
@@ -54,12 +54,12 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
 
             {/* Contact Button */}
             <div className="ml-4 lg:block">
-              <a
+              <Link
                 href="/contact"
                 className="bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] text-white font-semibold px-8 py-4 rounded-full hover:bg-indigo-700 transition"
               >
                 Contact me!
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Hamburger */}
