@@ -52,7 +52,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="py-16 px-4 text-center bg-gradient-to-br from-[#0b0510] via-[#1b132a] to-[#2e2a50]">
+    <div id="skills" className="py-16 px-4 text-center bg-gradient-to-br from-[#0b0510] via-[#1b132a] to-[#2e2a50]">
       <div className="max-w-screen-xl mx-auto">
         <Title
           level={2}

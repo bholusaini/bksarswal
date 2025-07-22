@@ -25,16 +25,21 @@ export interface ContactInterface {
 
 const Contact = () => {
 
+  const[ contectForm] = Form.useForm()
+
   const createContact = async (values:ContactInterface)=>{   
 
     try{
-       await axios.post("/api/contact",values)
+       await axios.post("/api/contact",{...values,name:`${values.firstName} ${values.lastName}`})
+
      
-      return message.success("message send success fully")
+    message.success("message send success fully") 
+    contectForm.resetFields()
 
     }
     catch(err)
-    {
+    { 
+      console.log(err)
      if(err instanceof Error)
       message.error("An error occured message not sent")
     }
@@ -42,7 +47,7 @@ const Contact = () => {
 
 
   return (
-    <div className="px-4 py-16 bg-gradient-to-br from-[#0b0510] via-[#171225] to-[#2a2a4b]">
+    <div id="contact" className="px-4 py-16 bg-gradient-to-br from-[#0b0510] via-[#171225] to-[#2a2a4b]">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left: Text + Form */}
         <div className="bg-[#0b0510] p-4 rounded-2xl">
@@ -58,6 +63,8 @@ const Contact = () => {
             layout="vertical"
             className="text-white"
             onFinish={createContact}
+            form={contectForm}
+            
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Form.Item name="firstName" label={<span className="text-white">First Name</span>}>
@@ -70,24 +77,10 @@ const Contact = () => {
                 <Input type="email" placeholder="Email address" className="bg-black! !text-white placeholder-gray-400! py-2!" />
               </Form.Item>
               <Form.Item name="mobile" label={<span className="text-white">Phone</span>}>
-                <Input placeholder="Phone number" className="bg-black! !text-white placeholder-gray-400! py-2!" />
+                <Input placeholder="Phone number" type="number" className="bg-black! !text-white placeholder-gray-400! py-2!" />
               </Form.Item>
             </div>
-            <Form.Item
-              name="serviceName"
-              label={<span className="text-white">Select Service</span>}
-            >
-              <Select
-                placeholder="-- Please choose an option --"
-                className="bg-black text-white"
-              
-              >
-                <Select.Option value="branding" className="text-white">Branding Design</Select.Option>
-                <Select.Option value="web" className="text-white">Web Design</Select.Option>
-                <Select.Option value="uiux" className="text-white">UI/UX Design</Select.Option>
-                <Select.Option value="app" className="text-white">App Design</Select.Option>
-              </Select>
-            </Form.Item>
+            
                 <Form.Item name="message" label={<span className="text-white">Message</span>}>
                   <Input.TextArea rows={5} placeholder="Message" className="bg-black! !text-white placeholder-gray-400! py-2!" />
                 </Form.Item>

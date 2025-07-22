@@ -20,6 +20,15 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+        const link = document.createElement('a');
+        link.href="/bholusaini.pdf";
+        link.download = "Resume_Bholusaini.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link)
+    }, [])
+
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b]">
       {/* Header */}
@@ -44,11 +53,11 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
 
             {/* Desktop Nav */}
             <nav className="hidden lg:block">
-              <ul className="flex text-lg font-semibold text-white gap-8">
-                <li><Link href="/" className="hover:border-b-2 hover:border-blue-500">Home</Link></li>
-                <li><Link href="/works" className="hover:border-b-2 hover:border-blue-500">Works</Link></li>
-                <li><Link href="/resume" className="hover:border-b-2 hover:border-blue-500">Resume</Link></li>
-                <li><Link href="/skills" className="hover:border-b-2 hover:border-blue-500">Skills</Link></li>
+              <ul className="flex text-lg font-semibold text-white gap-8">           
+                <li><Link href="/#home" className="hover:border-b-2 hover:border-blue-500">Home</Link></li>
+                <li><Link href="/#works" className="hover:border-b-2 hover:border-blue-500">Works</Link></li>
+                <li><Link href="/#resume" className="hover:border-b-2 hover:border-blue-500">Resume</Link></li>
+                <li><Link href="/#skills" className="hover:border-b-2 hover:border-blue-500">Skills</Link></li>
               </ul>
             </nav>
 
@@ -102,11 +111,11 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
       <div>
         <Link
           href="https://wa.me/9119142594?text=Hi !"
-          className="w-20 h-20 fixed bottom-0 right-0 m-8 flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl"
+          className="w-16 h-16 fixed bottom-0 right-0 m-8 flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl animate-bounce"
         >
           <img
             className="w-full h-full rounded-full"
-            src="/images/download (1).jpg"
+            src="/watsapp.webp"
             alt="WhatsApp"
           />
         </Link>

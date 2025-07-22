@@ -62,7 +62,7 @@ const Works = () => {
       : items.filter((item) => item.category === activeFilter);
 
   return (
-   <div className="px-4 py-16 bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b] text-center">
+   <div id="works" className="px-4 py-16 bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b] text-center">
       <Title level={2} className="text-blue-600! !text-3xl md:!text-6xl font-extrabold! mb-4">
         My Recent Works
       </Title>

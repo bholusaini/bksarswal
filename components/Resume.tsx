@@ -37,7 +37,7 @@ const ResumeCard = ({ item }: { item: ResumeItemInterface }) => (
 
 const Resume = () => {
   return (
-    <div className="py-16 px-4 bg-gradient-to-br from-[#0b0510] via-[#1e162c] to-[#2e2a50]">
+    <div  id="resume" className="py-16 px-4 bg-gradient-to-br from-[#0b0510] via-[#1e162c] to-[#2e2a50]">
       <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10">
         {/* Education Section */}
         <div className="w-full lg:w-1/2">

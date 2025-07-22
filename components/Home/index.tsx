@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const Home = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b]">
+    <div id='home' className="w-full bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b]">
       <section className="relative flex items-center min-h-screen">
         <div className="container mx-auto px-8 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">            
