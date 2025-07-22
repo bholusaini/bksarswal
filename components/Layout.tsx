@@ -41,15 +41,20 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
       >
         <div className="container mx-auto px-8 ">
           <div className="flex items-center justify-between py-4">
-            <div className="w-16 h-16  flex justify-center items-center rounded-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa]">
-              <Link
-                href="/"
-                className="text-white text-xl font-bold tracking-widest font-mono "
-              >
-                 BK
-            
-              </Link>
-            </div>
+            <div className='flex gap-2 justify-center items-center'>
+                <div className="w-12 h-12 flex justify-center items-center rounded-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa]">
+                  <Link
+                    href="/"
+                    className="text-white text-xl font-bold tracking-widest font-mono"
+                  >
+                    BK
+                  </Link>
+                </div>
+{/*   
+                <label className="text-2xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] bg-clip-text text-transparent">
+                  SARSWAL
+                </label> */}
+              </div>
 
             {/* Desktop Nav */}
             <nav className="hidden lg:block">
@@ -65,7 +70,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             <div className="ml-4 lg:block">
               <Link
                 href="/contact"
-                className="bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] text-white font-semibold px-8 py-4 rounded-full hover:bg-indigo-700 transition"
+                className="bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-700 transition"
               >
                 Contact me!
               </Link>

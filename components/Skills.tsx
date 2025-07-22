@@ -28,8 +28,8 @@ const skills = [
   { name: "Node.js", image: "/images/node.png", percent: 85 },
   { name: "Express.js", image: "/images/express.jpeg", percent: 88 },
   { name: "MongoDB", image: "/images/mongodb.jpeg", percent: 90 },
-  { name: "Microservices", image: "/images/microservices.png", percent: 80 },
-  { name: "REST APIs", image: "/images/api.png", percent: 85 },
+  { name: "Microservices", image: "/images/microservicess.png", percent: 80 },
+  { name: "REST APIs", image: "/images/restapi.jpg", percent: 85 },
 
   // DevOps
   { name: "Git & GitHub", image: "/images/github.jpeg", percent: 92 },
@@ -38,14 +38,14 @@ const skills = [
   { name: "CI/CD (GitHub Actions)", image: "/images/cicd.png", percent: 82 },
 
   // Cloud & Tools
-  { name: "Firebase", image: "/images/firebase.png", percent: 85 },
+  // { name: "Firebase", image: "/images/firebase.png", percent: 85 },
   { name: "Vercel", image: "/images/vercel.svg", percent: 90 },
-  { name: "Render", image: "/images/render.png", percent: 88 },
+  // { name: "Render", image: "/images/render.png", percent: 88 },
 
   // Enterprise
-  { name: "Monorepo (Nx/Turbo)", image: "/images/monorepo.png", percent: 70 },
-  { name: "Lazy Loading", image: "/images/lazy.png", percent: 85 },
-  { name: "Auth (JWT/OAuth)", image: "/images/auth.png", percent: 88 },
+  // { name: "Monorepo (Nx/Turbo)", image: "/images/monorepo.png", percent: 70 },
+  // { name: "Lazy Loading", image: "/images/lazy.png", percent: 85 },
+  // { name: "Auth (JWT/OAuth)", image: "/images/auth.png", percent: 88 },
 ];
 
 
