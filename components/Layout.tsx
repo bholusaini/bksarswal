@@ -69,7 +69,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             {/* Contact Button */}
             <div className="ml-4 lg:block">
               <Link
-                href="/contact"
+                href="/#contact"
                 className="bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-700 transition"
               >
                 Contact me!
@@ -99,11 +99,11 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             >
               ✕
             </button>
-            <Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-            <Link href="/works" onClick={() => setIsMenuOpen(false)}>Works</Link>
-            <Link href="/resume" onClick={() => setIsMenuOpen(false)}>Resume</Link>
-            <Link href="/skills" onClick={() => setIsMenuOpen(false)}>Skills</Link>
-            <Link href="/contact" onClick={() => setIsMenuOpen(false)}> Contact</Link>
+            <Link href="/#" onClick={() => setIsMenuOpen(false)}>Home</Link>
+            <Link href="/#works" onClick={() => setIsMenuOpen(false)}>Works</Link>
+            <Link href="/#resume" onClick={() => setIsMenuOpen(false)}>Resume</Link>
+            <Link href="/#skills" onClick={() => setIsMenuOpen(false)}>Skills</Link>
+            <Link href="/#contact" onClick={() => setIsMenuOpen(false)}> Contact</Link>
           
           </div>
         </div>
@@ -115,7 +115,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
       {/* WhatsApp Floating Icon */}
       <div>
         <Link
-          href="https://wa.me/9119142594?text=Hi !"
+          href="https://wa.me/7073736054?text=Hi !"
           className="w-16 h-16 fixed bottom-0 right-0 m-8 flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl animate-bounce"
         >
           <img
