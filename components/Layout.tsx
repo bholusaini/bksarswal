@@ -42,7 +42,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
         <div className="container mx-auto px-8 ">
           <div className="flex items-center justify-between py-4">
             <div className='flex gap-2 justify-center items-center'>
-                <div className="w-12 h-12 flex justify-center items-center rounded-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa]">
+                <div className="w-12 h-12 flex justify-center items-center rounded-full bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400 ">
                   <Link
                     href="/"
                     className="text-white text-xl font-bold tracking-widest font-mono"
@@ -50,15 +50,11 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
                     BK
                   </Link>
                 </div>
-{/*   
-                <label className="text-2xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] bg-clip-text text-transparent">
-                  SARSWAL
-                </label> */}
               </div>
 
             {/* Desktop Nav */}
             <nav className="hidden lg:block">
-              <ul className="flex text-lg font-semibold text-white gap-8">           
+              <ul className="flex text-lg font-semibold text-white gap-16">           
                 <li><Link href="/#home" className="hover:border-b-2 hover:border-blue-500">Home</Link></li>
                 <li><Link href="/#works" className="hover:border-b-2 hover:border-blue-500">Works</Link></li>
                 <li><Link href="/#resume" className="hover:border-b-2 hover:border-blue-500">Resume</Link></li>
@@ -70,7 +66,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             <div className="ml-4 lg:block">
               <Link
                 href="/#contact"
-                className="bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-700 transition"
+                className="bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400  text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-700 transition"
               >
                 Contact me!
               </Link>
@@ -115,7 +111,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
       {/* WhatsApp Floating Icon */}
       <div>
         <Link
-          href="https://wa.me/7073736054?text=Hi !"
+          href="https://wa.me/8949302731?text=Hi !"
           className="w-16 h-16 fixed bottom-0 right-0 m-8 flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl animate-bounce"
         >
           <img

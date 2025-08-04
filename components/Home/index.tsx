@@ -6,6 +6,7 @@ import Skills from '../Skills'
 import Contact from '../Contact'
 import Footer from './Footer'
 import Link from 'next/link'
+import { DownloadOutlined } from '@ant-design/icons'
 
 const Home = () => {
   return (
@@ -17,12 +18,14 @@ const Home = () => {
             <div className="w-full md:w-6/12  md:text-left order-1 md:order-none">
               {/* Heading fo Mobile */}
               <div className="md:hidden flex  flex-col justify-start gap-4 mb-6">
-                <span className="text-2xl sm:text-2xl text-white font-bold block">
+                <span className="text-2xl sm:text-2xl text-white font-serif block">
                   I am Bholu Saini
                 </span>
-               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-[#9564f8] to-[#8e5bf8] bg-clip-text text-transparent">
+               <h1
+                  className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-indigo-400 via-purple-400 to-white bg-clip-text text-transparent ">
                   Full Stack <br/> Web Developer
                 </h1>
+               
               </div>
 
               {/* img for Mobile */}
@@ -39,28 +42,30 @@ const Home = () => {
               </div>
 
               {/* Description + download btn show All Same  */}
-              <div className="space-y-6">
+              <div className="space-y-10">
                 {/* Heading for Desktop */}
                 <div className="hidden md:block">
-                  <span className="text-2xl sm:text-3xl text-white font-bold block pb-2">
+                  <span className="text-4xl sm:text-3xl text-white font-semibold block pb-2">
                     I am Bholu Saini
                   </span>
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#8e5bf8] font-extrabold leading-tight">
-                    Full Stack<br />Web Developer
-                  </h1>
+                 <h1
+                  className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-indigo-400 via-purple-400 to-white bg-clip-text text-transparent ">
+                  Full Stack <br/> Web Developer
+                </h1>
                 </div>
 
-                <p className="text-base sm:text-lg text-gray-300 font-medium max-w-2xl mx-auto md:mx-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos assumenda sunt qui, incidunt odio asperiores inventore quae provident!
-                </p>
+                <p className="text-base sm:text-lg text-gray-300 font-semibold max-w-2xl mx-auto md:mx-0">
+                As a passionate Full Stack Developer, I specialize in building scalable web applications from scratch using modern technologies like React, Next.js, Node.js, Express, and MongoDB. With over 3.5+ years of experience, I craft user-centric solutions that merge design with functionality.
+               </p>
+
 
                 <div className="pt-2">
                   <Link
                     href="/bholusaini.pdf"
                     download
-                    className="inline-flex items-center gap-2 border border-blue-400 text-blue-400 hover:text-white text-base sm:text-lg font-bold hover:bg-blue-500 px-6 py-3 rounded-full transition-all duration-300"
+                    className="inline-flex items-center gap-2 border border-blue-400 text-blue-400 hover:text-white text-base sm:text-lg font-semibold hover:bg-blue-500 px-6 py-3 rounded-full transition-all duration-300"
                   >
-                    Download CV
+                    Download CV <DownloadOutlined/>
                   </Link>
                 </div>
               </div>
@@ -84,9 +89,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Skills/>
       <Works/>
       <Resume/>
-      <Skills/>
       <Contact/>
       <Footer/>
     </div>

@@ -63,7 +63,7 @@ const Works = () => {
 
   return (
    <div id="works" className="px-4 py-16 bg-gradient-to-r from-[#0b0510] via-[#171225] to-[#2a2a4b] text-center">
-      <Title level={2} className="text-blue-600! !text-3xl md:!text-6xl font-extrabold! mb-4">
+      <Title level={2} className=" !font-serif bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent! !text-3xl md:!text-6xl font-extrabold! mb-4">
         My Recent Works
       </Title>
 

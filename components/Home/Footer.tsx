@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center gap-6">
           {/* Logo */}
              <div className='flex gap-2 justify-center items-center'>
-                <div className="w-12 h-12 flex justify-center items-center rounded-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa]">
+                <div className="w-12 h-12 flex justify-center items-center rounded-full bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400">
                   <Link
                     href="/"
                     className="text-white text-xl font-bold tracking-widest font-mono"
@@ -57,7 +57,7 @@ const Footer = () => {
             © 2025 All Rights Reserved by{" "}
             <Link
               href="https://bksarswal.vercel.app"
-              className="text-blue-500 hover:underline"
+              className="bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >

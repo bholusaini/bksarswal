@@ -6,7 +6,7 @@ import '@ant-design/v5-patch-for-react-19';
 import {
   PhoneOutlined,
   MailOutlined,
-  EnvironmentOutlined,
+  GithubOutlined,
 } from "@ant-design/icons";
 
 import axios from "axios";
@@ -85,7 +85,7 @@ const Contact = () => {
                   <Input.TextArea rows={5} placeholder="Message" className="bg-black! !text-white placeholder-gray-400! py-2!" />
                 </Form.Item>
                 <Form.Item>
-                  <Button type="primary" htmlType="submit" className="bg-blue-500 hover:bg-blue-600">
+                  <Button type="primary" htmlType="submit" className="bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400  hover:bg-blue-600">
                     Send Message
                   </Button>
                 </Form.Item>
@@ -98,8 +98,8 @@ const Contact = () => {
             <PhoneOutlined className="text-4xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-full p-2 " />
             <div>
               <p className="font-semibold">Phone</p>
-              <Link href="tel:+011236548096" className="text-blue-400 hover:underline">
-                +91 7073......
+              <Link href="tel:+018949302731" className="text-blue-400 hover:underline">
+                +91 8949302731
               </Link>
             </div>
           </div>
@@ -108,19 +108,22 @@ const Contact = () => {
             <MailOutlined className="text-4xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-full p-2 "/>
             <div>
               <p className="font-semibold">Email</p>
-              <Link href="mailto:gerolddesign@mail.com" className="text-blue-400 hover:underline">
-                bk@mail.com
+              <Link href="mailto:bholutechsunset@gmail.com" className="text-blue-400 hover:underline">
+                bholutechsunset@mail.com
               </Link>
             </div>
           </div>
 
           <div className="flex items-start gap-8 text-white">
-            <EnvironmentOutlined className="text-4xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-full p-2 "/>
+            <GithubOutlined className="text-4xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-full p-2 "/>
             <div>
-              <p className="font-semibold">Address</p>
-              <p>Warne Park Street Pine, FL 33157, </p>
+              <p className="font-semibold">Email</p>
+              <Link href="https://github.com/bksarswal" className="text-blue-400 hover:underline">
+               https://github.com/bksarswal
+              </Link>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
