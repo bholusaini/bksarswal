@@ -18,36 +18,46 @@ interface PortfolioItem {
 
 const items: PortfolioItem[] = [
   {
-    title: "Sebastian",
-    description: "Project was about precision and information....",
-    image:
-      "https://gerold.themejunction.net/wp-content/uploads/2024/05/portfolio-2.jpg",
+    title: "Amoeba Productions",
+    description: "Amoeba Productions & Studio  is a Patna-based event management and media production company, offering services such as event planning (weddings, birthdays, engagements, concerts), corporate events, digital marketing, advertising, and brand promotions across Patna, Bihar, Delhi, and Ranchi amoebaproductions.inThey also coordinate logistics for parties and commercial shoots—handling everything from production management to meals and accommodations—with a focus on transparent pricing and competitive local rates",
+    image:"/project/amoeba.png",
     category: "apps",
-    link: "https://gerold.themejunction.net/portfolios/sebastian/",
+    link: "https://www.amoebaproductions.in"
   },
   {
-    title: "Deloitte",
-    description: "Project was about precision and information....",
-    image:
-      "https://gerold.themejunction.net/wp-content/uploads/2024/05/portfolio-3.jpg",
+    title: "Ferns N Petals (FNP)",
+    description: "FNP is India’s leading floral and gifting brand, offering products like fresh flowers, cakes, personalized gifts, plants, chocolates, and corporate hampers. It serves customers through both online and offline retail, featuring services like same-day and midnight delivery, and has diversified into areas such as weddings & events, franchising, rental décor, and floral design schools.",
+     image:"/project/fnb.png",      
     category: "branding",
-    link: "https://gerold.themejunction.net/portfolios/deloitte/",
+    link: "https://www.fnp.com",
   },
   {
-    title: "New Age",
-    description: "Project was about precision and information....",
-    image:
-      "https://gerold.themejunction.net/wp-content/uploads/2024/05/portfolio-4.jpg",
+    title: "PayRentz",
+    description: "PayRentz is an Indian online rental platform—primarily serving Chennai and Coimbatore—that offers home appliances, furniture, fitness gear, and laptops on a flexible monthly rental basis. They promise a tech-powered, hassle-free experience with quick delivery (usually within 24 hours), “Rent Now, Pay Later” billing, and well-maintained items at each stage. ",
+    image:"/project/payrentz.png",
     category: "ux-ui",
-    link: "https://gerold.themejunction.net/portfolios/new-age/",
+    link: "https://www.payrentz.com",
   },
   {
-    title: "Mochnix",
-    description: "Project was about precision and information....",
-    image:
-      "https://gerold.themejunction.net/wp-content/uploads/2024/05/portfolio-1.jpg",
+    title: "SOS Party",
+    description: "SOS Party is a leading event management platform in India specializing in corporate and team-building experiences—offering virtual, in-person, hybrid, offsite, and MICE events. They provide over 100 unique, professionally curated activities (ranging from drum circles and VR treasure hunts to celebratory festivities) along with celebrity bookings, venue logistics, and seamless event execution.",
+   image:"/project/sosParty.png",
     category: "branding",
-    link: "https://gerold.themejunction.net/portfolios/mochnix/",
+    link: "https://sosparty.io",
+  },
+  {
+    title: "Furlenco",
+    description: "Furlenco is an Indian online platform that offers furniture and home appliances on a flexible rental or subscription basis. Customers can rent, subscribe, or buy products with the freedom to upgrade or swap items as needed, making it a convenient solution for modern, mobile lifestyles.",
+   image:"/project/furlenco.png",
+    category: "branding",
+    link: "https://www.furlenco.com",
+  },
+  {
+    title: "Livspace",
+    description: "Livspace is a leading tech-enabled home interior and renovation platform headquartered in Bengaluru, serving India, Singapore, and the Middle East. It redefines home design through an end-to-end solution—blending personalized 3D design consultations, modular interiors, professional installation, and management of the entire renovation process—with transparent pricing, quick turnaround, and a marketplace-powered model. They generate revenue through design service fees, commissions on product sales, and project execution charges.",
+   image:"/project/livspace.png",
+    category: "branding",
+    link: "https://www.livspace.com",
   },
 ];
 

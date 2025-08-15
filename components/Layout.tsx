@@ -111,7 +111,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
       {/* WhatsApp Floating Icon */}
       <div>
         <Link
-          href="https://wa.me/8949302731?text=Hi !"
+          href="https://wa.me/+918949302731?text=Hi !"
           className="w-16 h-16 fixed bottom-0 right-0 m-8 flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl animate-bounce"
         >
           <img
