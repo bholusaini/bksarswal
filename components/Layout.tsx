@@ -48,8 +48,14 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
                     className="text-white text-xl font-bold tracking-widest font-mono"
                   >
                     BK
-                  </Link>
+                  </Link>                  
                 </div>
+                <Link
+                    href="/"
+                    className="bg-gradient-to-r from-indigo-400 via-purple-400 to-white bg-clip-text text-transparent text-xl font-bold tracking-widest font-mono"
+                  >
+                    SARSWAL
+                  </Link>
               </div>
 
             {/* Desktop Nav */}
@@ -63,7 +69,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             </nav>
 
             {/* Contact Button */}
-            <div className="ml-4 lg:block">
+            <div className="ml-4 lg:block hidden">
               <Link
                 href="/#contact"
                 className="bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400  text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-700 transition"
