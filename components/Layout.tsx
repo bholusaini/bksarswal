@@ -63,7 +63,7 @@ const Layout: FC<ChildrenInterface> = ({ children }) => {
             </nav>
 
             {/* Contact Button */}
-            <div className="ml-4 lg:block">
+            <div className=" hidden ml-4 lg:block">
               <Link
                 href="/#contact"
                 className="bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400  text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-700 transition"
