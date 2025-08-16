@@ -118,7 +118,8 @@ const Works = () => {
                   <p className="text-sm text-gray-300">{item.description}</p>
                 </div>
                 <Link
-                  href={item.link}                
+                  href={item.link}   
+                  target="_blanck"             
                   className="  text-white  text-3xl font-bold "
                 >
                    <ArrowRightOutlined/>
