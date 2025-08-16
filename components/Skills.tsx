@@ -26,7 +26,7 @@ const skills = [
   { name: "Node.js", image: "/images/node.png" },
   { name: "Express.js", image: "/images/express.jpeg" },
   { name: "MongoDB", image: "/images/mongodb.jpeg" },
-  { name: "Microservices", image: "/images/microservicess.png" },
+  { name: "Micro services", image: "/images/microservicess.png" },
   { name: "REST APIs", image: "/images/restapi.jpg" },
 
   // DevOps
