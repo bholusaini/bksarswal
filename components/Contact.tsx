@@ -98,7 +98,7 @@ const Contact = () => {
             <PhoneOutlined className="text-4xl font-bold bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-full p-2 " />
             <div>
               <p className="font-semibold">Phone</p>
-              <Link href="tel:+018949302731" className="text-blue-400 hover:underline">
+              <Link href="tel:+918949302731" className="text-blue-400 hover:underline">
                 +91 8949302731
               </Link>
             </div>
@@ -109,7 +109,7 @@ const Contact = () => {
             <div>
               <p className="font-semibold">Email</p>
               <Link href="mailto:bholutechsunset@gmail.com" className="text-blue-400 hover:underline">
-                bholutechsunset@mail.com
+                <small>bholutechsunset@mail.com</small>
               </Link>
             </div>
           </div>
@@ -119,7 +119,7 @@ const Contact = () => {
             <div>
               <p className="font-semibold">Email</p>
               <Link href="https://github.com/bksarswal" className="text-blue-400 hover:underline">
-               https://github.com/bksarswal
+               <small>https://github.com/bksarswal</small>
               </Link>
             </div>
           </div>
