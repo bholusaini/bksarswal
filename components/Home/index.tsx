@@ -54,7 +54,7 @@ const Home = () => {
                 </h1>
                 </div>
 
-                <p className="text-base sm:text-lg text-gray-300 font-semibold max-w-2xl mx-auto md:mx-0">
+                <p className="text-base sm:text-lg text-gray-300 font-medium max-w-2xl mx-auto md:mx-0">
                 As a passionate Full Stack Developer, I specialize in building scalable web applications from scratch using modern technologies like React, Next.js, Node.js, Express, and MongoDB. With over 3.5+ years of experience, I craft user-centric solutions that merge design with functionality.
                </p>
 
