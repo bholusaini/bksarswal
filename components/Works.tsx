@@ -109,7 +109,7 @@ const Works = () => {
 
             
             
-           <div className="absolute bottom-0 left-0 w-full  to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 p-5">
+           <div className="absolute bottom-0 left-0    to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 p-5">
               
               <Card className="bg-gradient-to-br! from-blue-800 via-blue-600  border-0!  " >
               <div className="flex justify-between items-center ">
