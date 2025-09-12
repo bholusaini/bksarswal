@@ -21,7 +21,7 @@ const items: PortfolioItem[] = [
     title: "Amoeba Productions",
     description: "Amoeba Productions & Studio  is a Patna-based event management and media production company, offering services such as event planning (weddings, birthdays, engagements, concerts), corporate events, digital marketing, advertising, and brand promotions across Patna, Bihar, Delhi, and Ranchi amoebaproductions.inThey also coordinate logistics for parties and commercial shoots—handling everything from production management to meals and accommodations—with a focus on transparent pricing and competitive local rates",
     image:"/project/amoeba.png",
-    category: "apps",
+    category: "ecom",
     link: "https://www.amoebaproductions.in"
   },
   {
@@ -35,7 +35,7 @@ const items: PortfolioItem[] = [
     title: "PayRentz",
     description: "PayRentz is an Indian online rental platform—primarily serving Chennai and Coimbatore—that offers home appliances, furniture, fitness gear, and laptops on a flexible monthly rental basis. They promise a tech-powered, hassle-free experience with quick delivery (usually within 24 hours), “Rent Now, Pay Later” billing, and well-maintained items at each stage. ",
     image:"/project/payrentz.png",
-    category: "ux-ui",
+    category: "ecom",
     link: "https://www.payrentz.com",
   },
   {
@@ -61,7 +61,7 @@ const items: PortfolioItem[] = [
   },
 ];
 
-const categories = ["all", "apps", "branding", "ux-ui"];
+const categories = ["all", "ecom", "branding"];
 
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState("all");
