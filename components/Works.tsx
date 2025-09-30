@@ -21,7 +21,7 @@ const items: PortfolioItem[] = [
     title: "Amoeba Productions",
     description: "Amoeba Productions & Studio  is a Patna-based event management and media production company, offering services such as event planning (weddings, birthdays, engagements, concerts), corporate events, digital marketing, advertising, and brand promotions across Patna, Bihar, Delhi, and Ranchi amoebaproductions.inThey also coordinate logistics for parties and commercial shoots—handling everything from production management to meals and accommodations—with a focus on transparent pricing and competitive local rates",
     image:"/project/amoeba.png",
-    category: "apps",
+    category: "ecom",
     link: "https://www.amoebaproductions.in"
   },
   {
@@ -35,7 +35,7 @@ const items: PortfolioItem[] = [
     title: "PayRentz",
     description: "PayRentz is an Indian online rental platform—primarily serving Chennai and Coimbatore—that offers home appliances, furniture, fitness gear, and laptops on a flexible monthly rental basis. They promise a tech-powered, hassle-free experience with quick delivery (usually within 24 hours), “Rent Now, Pay Later” billing, and well-maintained items at each stage. ",
     image:"/project/payrentz.png",
-    category: "ux-ui",
+    category: "ecom",
     link: "https://www.payrentz.com",
   },
   {
@@ -61,7 +61,7 @@ const items: PortfolioItem[] = [
   },
 ];
 
-const categories = ["all", "apps", "branding", "ux-ui"];
+const categories = ["all", "ecom", "branding"];
 
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -109,7 +109,7 @@ const Works = () => {
 
             
             
-           <div className="absolute bottom-0 left-0 w-full  to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 p-5">
+           <div className="absolute bottom-0 left-0    to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 p-5">
               
               <Card className="bg-gradient-to-br! from-blue-800 via-blue-600  border-0!  " >
               <div className="flex justify-between items-center ">
